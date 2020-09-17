@@ -1,0 +1,20 @@
+# The framework
+fastapi==0.55.1
+
+# WSGI/ASGI
+uvicorn==0.11.5
+gunicorn==20.0.4
+
+# Database stuff
+asyncpg==0.20.1
+tortoise-orm==0.16.12
+
+# Unit testing / coverage / linting
+pytest==5.4.2
+pytest-cov==2.9.0
+flake8===3.8.2
+black==19.10b0
+isort==4.3.21
+
+# Misc utlilities
+requests==2.23.0
