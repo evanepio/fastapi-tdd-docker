@@ -6,6 +6,10 @@ build:
 test: build
 	docker-compose exec web python -m pytest
 
+.PHONY: test/unit
+test/unit: build
+	docker-compose exec web pytest -k "unit" -n auto
+
 .PHONY: db
 db: build
 	docker-compose exec web python app/db.py
